@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
-import s from '../assets/Home.scss'
+import s from '../assets/Vitae.scss'
+import state3 from '../assets/state3.png'
 
-class Home extends Component {
+class Vitae extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      homes: []
+      vitaes: []
     }
   }
 
@@ -23,12 +24,14 @@ class Home extends Component {
   }
 
   render () {
+    console.log(s)
     return (
-      <div className={s.homeContain}>
-
+      <div className={s.vitaeContain}>
+        测试
+        <img src={state3} />
       </div>
     )
   }
 }
 
-export default Home
+export default Vitae

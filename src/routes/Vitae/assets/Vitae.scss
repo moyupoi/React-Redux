@@ -1,0 +1,13 @@
+@function getRem($pixel) {
+   @return $pixel/200*1rem;
+}
+@function getRemFour($top,$right, $bottom, $left) {
+  @return $top/200*1rem $right/200*1rem $bottom/200*1rem $left/200*1rem;
+}
+
+.vitaeContain {
+  width: getRem(820);
+  height: 100%;
+  font-size: getRem(14);
+  color: #878686;
+}
