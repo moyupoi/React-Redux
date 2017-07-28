@@ -12,7 +12,7 @@ export const createRoutes = (store) => (
   {
     path        : '/',
     component   : App,
-    indexRoute  : Home,
+    indexRoute  : Home(store),
     childRoutes : [
       CounterRoute(store)
     ]
